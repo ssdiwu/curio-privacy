@@ -126,7 +126,7 @@
     <main>
         <header>
             <h1>Curio Privacy Policy</h1>
-            <p class="subtitle">Last updated: July 4, 2026</p>
+            <p class="subtitle">Last updated: August 15, 2026 · 最后更新：2026 年 8 月 15 日</p>
         </header>
 
         <div class="language-block" lang="en">
@@ -157,7 +157,8 @@
                     <li>Timeline events, reminder rules, and app preferences</li>
                     <li>Photos you choose to take or import as item cover images</li>
                 </ul>
-                <p>This data is mainly stored in the app's local sandbox and is used for display, editing, and review inside Curio.</p>
+                <p>By default, this data is stored in the app's local sandbox and is used for display, editing, and review inside Curio. If you explicitly enable iCloud Sync, the data described in Section 7 is also stored in your private iCloud database.</p>
+                <p>Curio Plus also provides full-archive export and import. An exported <code>.curiobackup</code> package contains your items, images, series, timeline data, reminders, and their relationships, and is not password-encrypted. You choose where to save the package through the iOS file interface; Curio does not upload it to a Curio-owned server. Import validates the package and, only after your confirmation, replaces the current archive. Curio keeps only the latest local pre-import recovery point.</p>
             </section>
 
             <section class="section">
@@ -171,7 +172,7 @@
                 <p>Curio may request the following system permissions:</p>
                 <ul>
                     <li>Camera: to take item photos.</li>
-                    <li>Photos: to select images from your photo library.</li>
+                    <li>Photos: to select images from your photo library and, when you choose to save, write Curio-generated images or group or contact QR codes to Photos.</li>
                     <li>Notifications: to deliver item reminder rules.</li>
                     <li>Face ID / device authentication: to provide app lock. Biometric data is handled by iOS, and Curio does not receive or store your Face ID data.</li>
                 </ul>
@@ -179,21 +180,23 @@
 
             <section class="section">
                 <h3>6. Purchases and Subscriptions</h3>
-                <p>Curio Plus purchases and purchase restoration are handled by Apple StoreKit and the App Store. Curio does not receive your card number, payment account password, or complete payment details. The app only receives transaction status returned by Apple to determine whether member features are available.</p>
+                <p>Curio Plus purchases and purchase restoration are handled by Apple StoreKit and the App Store. Curio does not receive your card number, payment account password, or complete payment details. The app only receives transaction status returned by Apple to determine whether Curio Plus features are available.</p>
             </section>
 
             <section class="section">
                 <h3>7. iCloud and Third-Party Services</h3>
-                <p>The current version primarily uses local storage. If a future version provides iCloud sync and you choose to enable it, related data will sync between your devices through Apple's iCloud service. iCloud data is governed by Apple's privacy policy and security mechanisms.</p>
+                <p>Curio supports optional iCloud Sync as a Curio Plus feature. Sync is off by default. When you explicitly enable it while signed in to iCloud, Curio uploads your full private archive—including item, series, timeline, reminder, and image data—to the private CloudKit database associated with your iCloud account and keeps that archive in sync across devices using the same account. Changes and deletions can propagate to those devices. Sync is not a backup.</p>
+                <p>Apple operates iCloud and CloudKit. Data in the private database is available only to your iCloud account by default, counts toward your iCloud storage, and is governed by Apple's privacy policy and security mechanisms. Curio does not upload this archive to a Curio-owned server.</p>
                 <p>Except for Apple system capabilities such as StoreKit, iCloud, notifications, Face ID, and Safari View, Curio currently does not integrate third-party advertising or analytics services.</p>
             </section>
 
             <section class="section">
-                <h3>8. Data Deletion and Control</h3>
+                <h3>8. Data Retention, Deletion, and Control</h3>
                 <ul>
-                    <li>You can delete items, series, or events you created inside Curio.</li>
-                    <li>Uninstalling the app usually removes local app data from the device.</li>
-                    <li>If iCloud sync is enabled in the future, you can manage related cloud data through iOS iCloud storage settings.</li>
+                    <li>Local data remains on your device until you delete records inside Curio or uninstall the app. Uninstalling usually removes local app data from that device.</li>
+                    <li>You can delete items, series, or events inside Curio. If iCloud Sync is on, keep it on until the app reports that synchronization is complete so those deletions can propagate to your other synced devices and private iCloud database.</li>
+                    <li>Turning off iCloud Sync in Curio stops new transfers but retains existing archives on the device and in iCloud. Uninstalling Curio does not by itself delete data already stored in iCloud.</li>
+                    <li>You can manage whether Curio may use iCloud in your Apple Account's iCloud settings. If you need help understanding or deleting Curio data, contact us using the addresses below. Because the archive is stored in your private iCloud database, Curio does not have direct access to inspect it or delete it on your behalf.</li>
                 </ul>
             </section>
 
@@ -242,7 +245,8 @@
                     <li>生命线事件、提醒规则和应用偏好设置</li>
                     <li>您选择拍摄或导入并用于器物封面的图片</li>
                 </ul>
-                <p>这些数据主要保存在 App 的本地沙盒中，用于在应用内展示、编辑和回看。</p>
+                <p>默认情况下，这些数据保存在 App 的本地沙盒中，用于在应用内展示、编辑和回看。如果您主动开启 iCloud 同步，第 7 节所述数据也会保存在您的私有 iCloud 数据库中。</p>
+                <p>Curio Plus 还提供完整档案导出与导入。导出的 <code>.curiobackup</code> 文档包包含器物、图片、系列、生命线、提醒及其关系，且不提供密码加密。您通过 iOS 文件界面自行选择保存位置，Curio 不会把它上传到 Curio 自有服务器。导入会先校验文档包，并仅在您确认后完整替换当前档案；Curio 只保留最近一次导入前的本地恢复点。</p>
             </section>
 
             <section class="section">
@@ -256,7 +260,7 @@
                 <p>Curio 可能会请求以下系统权限：</p>
                 <ul>
                     <li>相机权限：用于拍摄器物照片。</li>
-                    <li>照片权限：用于从照片库选择图片导入。</li>
+                    <li>照片权限：用于从照片库选择图片导入，以及在您主动保存时把 Curio 生成的图片、用户群二维码或联系人二维码写入照片库。</li>
                     <li>通知权限：用于器物提醒规则。</li>
                     <li>Face ID / 设备认证：用于应用锁。生物识别信息由 iOS 系统处理，Curio 不会获取或保存您的 Face ID 数据。</li>
                 </ul>
@@ -264,21 +268,23 @@
 
             <section class="section">
                 <h3>6. 购买与订阅</h3>
-                <p>Curio Plus 的购买和恢复购买由 Apple StoreKit 与 App Store 处理。Curio 不会获取您的银行卡号、支付账户密码或完整支付资料。应用只会接收 Apple 返回的交易状态，用于判断会员功能是否可用。</p>
+                <p>Curio Plus 的购买和恢复购买由 Apple StoreKit 与 App Store 处理。Curio 不会获取您的银行卡号、支付账户密码或完整支付资料。应用只会接收 Apple 返回的交易状态，用于判断 Curio Plus 功能是否可用。</p>
             </section>
 
             <section class="section">
                 <h3>7. iCloud 与第三方服务</h3>
-                <p>当前版本以本地存储为主。若后续版本提供 iCloud 同步，并且您选择启用，相关数据会通过 Apple iCloud 服务在您的设备之间同步。iCloud 数据受 Apple 的隐私政策与安全机制约束。</p>
+                <p>Curio Plus 提供可选的 iCloud 同步，默认关闭。当您已登录 iCloud 并主动开启同步时，Curio 会把完整私人档案（包括器物、系列、生命线、提醒和图片数据）上传到与您 iCloud 账户关联的私有 CloudKit 数据库，并在使用同一账户的设备之间保持同步。修改和删除可能传播到这些设备；同步不是备份。</p>
+                <p>iCloud 与 CloudKit 由 Apple 运营。私有数据库中的数据默认仅您的 iCloud 账户可以访问，会占用您的 iCloud 存储空间，并受 Apple 的隐私政策与安全机制约束。Curio 不会把这份档案上传到 Curio 自有服务器。</p>
                 <p>除 Apple 提供的系统能力（如 StoreKit、iCloud、通知、Face ID、Safari 视图）外，Curio 当前不集成第三方广告或分析服务。</p>
             </section>
 
             <section class="section">
-                <h3>8. 数据删除与控制</h3>
+                <h3>8. 数据保留、删除与控制</h3>
                 <ul>
-                    <li>您可以在 Curio 内删除已创建的器物、系列或事件。</li>
-                    <li>卸载 App 通常会删除设备上的本地应用数据。</li>
-                    <li>如未来启用 iCloud 同步，您可以通过 iOS 系统设置中的 iCloud 存储管理相关云端数据。</li>
+                    <li>本地数据会保留在设备上，直至您在 Curio 内删除相关记录或卸载 App。卸载通常会删除该设备上的本地应用数据。</li>
+                    <li>您可以在 Curio 内删除器物、系列或事件。如果 iCloud 同步已开启，请保持同步开启，直至 App 显示同步完成，以便删除传播到其他同步设备和您的私有 iCloud 数据库。</li>
+                    <li>在 Curio 内关闭 iCloud 同步会停止传输新修改，但会保留设备和 iCloud 中已有的档案。卸载 Curio 本身也不会删除已存入 iCloud 的数据。</li>
+                    <li>您可以在 Apple 账户的 iCloud 设置中管理 Curio 是否可使用 iCloud。如需了解或删除 Curio 数据方面的帮助，请通过下方邮箱联系我们。由于档案保存在您的私有 iCloud 数据库中，Curio 无法直接查看，也无法代您删除。</li>
                 </ul>
             </section>
 
